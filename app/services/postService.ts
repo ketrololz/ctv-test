@@ -4,10 +4,10 @@ import type { Post } from '~/types/post.types';
 export class PostService {
   constructor(private alias: string) {}
 
-  async createPost(post: Omit<Post, 'datetime'>) {
+  async createPost(post: Omit<Post, 'datetime' | 'id'>) {
     const date = new Date();
 
-    const body: Post = {
+    const body: Omit<Post, 'id'> = {
       title: post.title,
       datetime: date.toISOString(),
       short_description: post.short_description,
@@ -31,7 +31,7 @@ export class PostService {
     const url = `/api/test/materials/${this.alias}`;
 
     try {
-      const data = await $fetch(url);
+      const data = await $fetch<Post[]>(url);
       return data;
     } catch (e) {
       console.error(e);

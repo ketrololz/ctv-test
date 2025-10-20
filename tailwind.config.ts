@@ -8,6 +8,7 @@ export default {
           500: '#00B2FF',
         },
         background: '#F4F6FB',
+        grey: '#81859C',
         'dark-grey': '#14142A',
         'light-grey': '#BEC2DA',
       },
