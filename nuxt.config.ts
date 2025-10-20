@@ -9,4 +9,17 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
   ],
+  fonts: {
+    families: [
+      { name: 'Source Sans 3', provider: 'google', weights: [400, 600, 700] },
+      { name: 'Futura PT', src: 'public/fonts/FuturaCyrillicBook.ttf' },
+    ],
+  },
+  nitro: {
+    routeRules: {
+      '/api/test/materials/**': {
+        proxy: 'https://naukatv.ru/api/test/materials/**',
+      },
+    },
+  },
 });
