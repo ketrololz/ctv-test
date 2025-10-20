@@ -1,4 +1,4 @@
-import { ALIAS } from '~/constants/ALIAS';
+import { ALIAS } from '~/constants/alias';
 import type { Post } from '~/types/post.types';
 
 export class PostService {
