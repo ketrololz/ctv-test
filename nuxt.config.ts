@@ -9,7 +9,12 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     'nuxt-svgo',
+    'nuxt-tiptap-editor',
+    '@pinia/nuxt',
   ],
+  tiptap: {
+    prefix: 'Tiptap',
+  },
   fonts: {
     families: [
       { name: 'Source Sans 3', provider: 'google', weights: [400, 600, 700] },

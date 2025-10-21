@@ -18,7 +18,7 @@ export class PostService {
     const url = `/api/test/materials/${this.alias}/save`;
 
     try {
-      const data = await $fetch(url, {
+      await $fetch(url, {
         method: 'POST',
         body,
       });

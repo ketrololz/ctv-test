@@ -18,7 +18,7 @@ const time = date.toLocaleDateString('ru-RU', {
 });
 </script>
 <template>
-  <div class="bg-white flex flex-col gap-[20px]  hover:shadow-2xl hover:shadow-grey/15 w-full min-h-100 h-100 py-[32px] px-[24px] rounded-2xl transition-shadow ease-in-out cursor-pointer">
+  <div class="bg-white flex flex-col gap-[20px]  hover:shadow-2xl hover:shadow-grey/15 w-full h-full py-[32px] px-[24px] rounded-2xl transition-shadow ease-in-out cursor-pointer">
     <div class="flex gap-2 items-center">
       <CalendarIcon
         class="text-light-grey h-[20px]"
