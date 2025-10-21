@@ -4,22 +4,14 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   modules: [
     '@nuxt/eslint',
-    '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     'nuxt-svgo',
     'nuxt-tiptap-editor',
-    '@pinia/nuxt',
   ],
   tiptap: {
     prefix: 'Tiptap',
-  },
-  fonts: {
-    families: [
-      { name: 'SourceSans3', src: 'public/fonts/SourceSans3-SemiBold.ttf' },
-      { name: 'FuturaPT', src: 'public/fonts/FuturaPT-Book.ttf' },
-    ],
   },
   nitro: {
     routeRules: {

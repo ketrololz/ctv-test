@@ -46,7 +46,7 @@ function save() {
         class="flex flex-col items-center w-full max-w-[1296px] px-[16px] py-[12px] md:px-[36px]"
       >
         <BackButton class="self-start mt-[48px]"></BackButton>
-        <h1 class="text-[29px] md:text-[43px] font-source w-full my-[48px]">
+        <h1 class="text-[29px] md:text-[36px] font-source w-full my-[48px]">
           Создание материала
         </h1>
         <div

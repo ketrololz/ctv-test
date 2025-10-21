@@ -13,7 +13,8 @@ export default {
         'light-grey': '#BEC2DA',
       },
       fontFamily: {
-        source: ['SourceSans3', 'sans-serif'],
+        source: ['SourceSans', 'sans-serif'],
+        provider: 'local',
         futura: ['FuturaPT', 'sans-serif'],
       },
     },

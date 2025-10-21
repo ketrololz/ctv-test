@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <div class="flex flex-col min-h-screen">
     <Header
-      ><NuxtLink to="posts/create">
+      ><NuxtLink to="/posts/create">
         <button
           class="font-futura text-primary-500 bg-primary-100 px-[24px] py-[13px] rounded-[13px] hover:bg-primary-300 disabled:opacity-60 transition-all ease-in-out hidden sm:block"
         >
@@ -44,7 +44,7 @@ onMounted(() => {
       <div
         class="flex flex-col items-center w-full max-w-[1296px] px-[16px] py-[12px] md:px-[36px]"
       >
-        <h1 class="text-[29px] md:text-[43px] font-source w-full my-[48px]">
+        <h1 class="text-[29px] md:text-[36px] font-source w-full my-[48px]">
           Материалы
         </h1>
         <div

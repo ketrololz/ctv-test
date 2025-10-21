@@ -18,7 +18,9 @@ const time = date.toLocaleDateString('ru-RU', {
 });
 </script>
 <template>
-  <div class="bg-white flex flex-col gap-[20px]  hover:shadow-2xl hover:shadow-grey/15 w-full h-full py-[32px] px-[24px] rounded-2xl transition-shadow ease-in-out cursor-pointer">
+  <div
+    class="bg-white flex flex-col gap-[2px] hover:shadow-2xl hover:shadow-grey/15 w-full h-full py-[32px] px-[24px] rounded-2xl transition-shadow ease-in-out cursor-pointer"
+  >
     <div class="flex gap-2 items-center">
       <CalendarIcon
         class="text-light-grey h-[20px]"
@@ -26,11 +28,9 @@ const time = date.toLocaleDateString('ru-RU', {
       ></CalendarIcon
       ><span class="font-futura text-light-grey">{{ time }}</span>
     </div>
-    <h3 class="font-source text-xl text-dark-grey">{{ title }}</h3>
-    <p class="font-futura text-grey line-clamp-4">
-      Известно, что совы — превосходные хищники. Причем они одинаково видят как
-      днем, так и ночью. Известно, что совы — превосходные хищники. Причем они
-      одинаково видят как днем, так и ночью.
+    <h3 class="font-source text-xl text-dark-grey mb-4">{{ title }}</h3>
+    <p class="font-futura text-grey line-clamp-4 leading-[120%]">
+      {{ description }}
     </p>
   </div>
 </template>
