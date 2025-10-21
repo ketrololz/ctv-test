@@ -3,7 +3,7 @@ import ArrowIcon from '~/assets/svg/arrow.svg';
 </script>
 <template>
   <NuxtLink to="/">
-    <div class="flex gap-2 cursor-pointer">
+    <div class="flex gap-2 cursor-pointer font-futura">
       <ArrowIcon
         class="h-[24px]"
         :fontControlled="false"

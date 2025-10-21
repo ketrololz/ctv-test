@@ -58,7 +58,7 @@ function save() {
               type="text"
               maxlength="80"
               placeholder="Введите заголовок..."
-              class="text-dark-grey resize-none text-4xl w-full bg-transparent focus:outline-none placeholder:text-light-grey"
+              class="text-dark-grey resize-none font-source text-4xl w-full bg-transparent focus:outline-none placeholder:text-light-grey"
               rows="2"
               v-model="title"
             ></textarea>
@@ -67,11 +67,11 @@ function save() {
               type="text"
               maxlength="255"
               placeholder="Введите краткое описание..."
-              class="text-dark-grey resize-none text-[22px] w-full bg-transparent focus:outline-none placeholder:text-light-grey"
+              class="text-dark-grey resize-none font-futura text-[22px] w-full bg-transparent focus:outline-none placeholder:text-light-grey"
               rows="4"
               v-model="short_description"
             ></textarea>
-            <TiptapEditor class="mt-10" />
+            <TiptapEditor class="mt-10 font-futura" />
           </div>
         </div>
       </div>
